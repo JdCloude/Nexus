@@ -1,0 +1,157 @@
+# Nexus Voice Integration - Environment Variables Example
+# ====================================================
+# Copia este archivo como .env y configura tus variables
+
+# ElevenLabs Configuration
+# ========================
+# Obtén tu API key en: https://elevenlabs.io/
+ELEVENLABS_API_KEY=your_elevenlabs_api_key_here
+
+# Nexus Core Configuration
+# ========================
+# URL del servidor Nexus Core
+NEXUS_CORE_URL=http://localhost:8000
+NEXUS_API_KEY=your_nexus_api_key_here
+
+# Voice Configuration
+# ===================
+# Configuración por defecto para voces
+DEFAULT_VOICE_MODEL=eleven_v3
+DEFAULT_LANGUAGE=en
+DEFAULT_STABILITY=0.7
+DEFAULT_SIMILARITY_BOOST=0.8
+DEFAULT_STYLE=0.0
+
+# Audio Storage Configuration
+# ===========================
+# Para almacenamiento local
+AUDIO_STORAGE_PATH=./audio_files
+
+# Para almacenamiento en la nube (opcional)
+# AWS_S3_BUCKET=nexus-voice-audio
+# AWS_ACCESS_KEY_ID=your_aws_access_key
+# AWS_SECRET_ACCESS_KEY=your_aws_secret_key
+# AWS_REGION=us-east-1
+
+# Google Cloud Storage (opcional)
+# GOOGLE_CLOUD_STORAGE_BUCKET=nexus-voice-audio
+# GOOGLE_APPLICATION_CREDENTIALS=path/to/service-account.json
+
+# Azure Blob Storage (opcional)
+# AZURE_STORAGE_CONNECTION_STRING=your_azure_connection_string
+# AZURE_STORAGE_CONTAINER=nexus-voice-audio
+
+# Logging Configuration
+# =====================
+LOG_LEVEL=INFO
+LOG_FILE=nexus_voice.log
+
+# Monitoring Configuration
+# ========================
+# Prometheus metrics (opcional)
+PROMETHEUS_ENABLED=true
+PROMETHEUS_PORT=9090
+
+# Performance Configuration
+# =========================
+# Límites de concurrencia
+MAX_CONCURRENT_VOICE_REQUESTS=10
+VOICE_REQUEST_TIMEOUT=30
+
+# Cache Configuration
+# ===================
+# Cache de audio generado (en segundos)
+AUDIO_CACHE_TTL=3600
+CACHE_ENABLED=true
+
+# Security Configuration
+# =====================
+# Encriptación de datos de voz
+ENCRYPT_AUDIO_DATA=true
+ENCRYPTION_KEY=your_encryption_key_here
+
+# Rate Limiting
+# =============
+# Límites de uso por usuario
+MAX_REQUESTS_PER_MINUTE=60
+MAX_REQUESTS_PER_HOUR=1000
+
+# Development Configuration
+# =========================
+# Solo para desarrollo
+DEBUG_MODE=false
+MOCK_ELEVENLABS=false
+
+# Testing Configuration
+# =====================
+# Para tests automatizados
+TEST_MODE=false
+TEST_ELEVENLABS_API_KEY=test_key
+
+# Integration Configuration
+# =========================
+# Slack Integration (opcional)
+SLACK_BOT_TOKEN=your_slack_bot_token
+SLACK_SIGNING_SECRET=your_slack_signing_secret
+
+# Discord Integration (opcional)
+DISCORD_BOT_TOKEN=your_discord_bot_token
+
+# Microsoft Teams Integration (opcional)
+TEAMS_APP_ID=your_teams_app_id
+TEAMS_APP_PASSWORD=your_teams_app_password
+
+# Database Configuration (opcional)
+# =================================
+# Para persistencia de conversaciones
+DATABASE_URL=postgresql://user:password@localhost/nexus_voice
+REDIS_URL=redis://localhost:6379
+
+# Webhook Configuration
+# =====================
+# Para notificaciones de eventos
+WEBHOOK_URL=https://your-webhook-url.com/nexus-voice
+WEBHOOK_SECRET=your_webhook_secret
+
+# Analytics Configuration
+# =======================
+# Para métricas y analytics
+ANALYTICS_ENABLED=true
+ANALYTICS_PROVIDER=mixpanel  # o 'amplitude', 'google_analytics'
+ANALYTICS_API_KEY=your_analytics_api_key
+
+# Voice Cloning Configuration
+# ===========================
+# Configuración para clonación de voz
+MAX_CLONED_VOICES_PER_USER=5
+MIN_AUDIO_SAMPLES_FOR_CLONING=1
+MAX_AUDIO_SAMPLE_DURATION=300  # segundos
+
+# Ethical AI Configuration
+# ========================
+# Configuraciones para uso ético
+REQUIRE_VOICE_CONSENT=true
+DETECT_DEEPFAKES=true
+WATERMARK_AUDIO=true
+TRANSPARENCY_NOTICE=true
+
+# Backup Configuration
+# ====================
+# Configuración de respaldos
+BACKUP_ENABLED=true
+BACKUP_FREQUENCY=daily
+BACKUP_RETENTION_DAYS=30
+
+# Example Usage:
+# =============
+# 1. Copia este archivo como .env
+# 2. Configura tus variables con valores reales
+# 3. Asegúrate de que el archivo .env esté en .gitignore
+# 4. En tu código, usa: load_dotenv() para cargar las variables
+
+# Notas importantes:
+# ==================
+# - Nunca commits archivos .env con claves reales
+# - Usa diferentes claves para desarrollo y producción
+# - Rota las claves regularmente por seguridad
+# - Monitorea el uso de la API para controlar costos 

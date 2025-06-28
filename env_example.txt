@@ -1,0 +1,11 @@
+# Configuración del Agente de Noticias Automatizado
+# Copia este archivo como .env y completa con tus credenciales reales
+
+# API Key de OpenAI (obtén en https://platform.openai.com/api-keys)
+OPENAI_API_KEY=tu_openai_api_key_aqui
+
+# Token de Notion (obtén en https://www.notion.so/my-integrations)
+NOTION_TOKEN=tu_notion_token_aqui
+
+# ID de la base de datos de Notion (obtén de la URL de tu base de datos)
+NOTION_DATABASE_ID=tu_notion_database_id_aqui 
