@@ -270,7 +270,7 @@ Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](L
 ## 🙏 Agradecimientos
 
 - **ElevenLabs** por su tecnología de síntesis de voz revolucionaria
-- **OpenAI** por los modelos de lenguaje que potencian Nexus
+- **Gemini** por los modelos de lenguaje que potencian Nexus
 - **La comunidad de desarrolladores** que contribuye al proyecto
 
 ## 🎉 Estado del Proyecto
