@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexus - Agente Cognitivo de Colaboración en Tiempo Real</title>
+
+    <!-- Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="container">
+        <a href="#" class="logo">Nexus</a>
+        <ul class="nav-links">
+          <li><a href="#features">Características</a></li>
+          <li><a href="#why-nexus">Por qué Nexus</a></li>
+          <li><a href="#use-cases">Casos de Uso</a></li>
+        </ul>
+        <a href="#cta" class="btn btn-demo">Solicitar Demo</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ======== HERO SECTION ======== -->
+      <section class="hero-section">
+        <div class="hero-bg">
+          <div class="hero-gradient"></div>
+          <div class="hero-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <i class="ph-bold ph-sparkle"></i>
+              <span>Puntuación de Innovación: 86.00</span>
+            </div>
+            <h1 class="hero-title">
+              <span class="title-line">Nexus</span>
+              <span class="title-subtitle">Agente Cognitivo de Colaboración</span>
+              <span class="title-highlight">en Tiempo Real</span>
+            </h1>
+            <p class="hero-description">
+              Transforma la colaboración empresarial con la primera plataforma
+              B2B que combina <strong>IA cognitiva</strong>, <strong>análisis predictivo</strong> y 
+              <strong>automatización inteligente</strong> en un ecosistema unificado.
+            </p>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Empresas</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">86%</span>
+                <span class="stat-label">Eficiencia</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">99.2%</span>
+                <span class="stat-label">Precisión</span>
+              </div>
+            </div>
+            <div class="hero-buttons">
+              <a href="#features" class="btn btn-primary btn-large">
+                <i class="ph-bold ph-play-circle"></i>
+                <span>Ver Demo Interactiva</span>
+              </a>
+              <a href="#cta" class="btn btn-secondary-outline btn-large">
+                <span>Solicitar Acceso Beta</span>
+                <i class="ph-bold ph-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="hero">
+            <div class="hero-glow"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Turn 
+                        <span class="dynamic-text-container">
+                            <span id="dynamic-text"></span><span class="cursor">_</span>
+                        </span>
+                        <br>
+                        into Action. Instantly.
+                    </h1>
+                    <p class="hero-subtitle">Nexus is the AI agent that lives in your conversations, understands your team's intent, and executes tasks in the tools you already use. Stop coordinating. Start creating.</p>
+                    <a href="#" class="cta-button hero-cta">Get Started for Free</a>
+                </div>
+            </div>
+        </section> -->
+
+
+      <!-- ======== SOCIAL PROOF SECTION ======== -->
+      <section class="social-proof-section">
+        <div class="container">
+          <p>Con la confianza de empresas líderes en innovación</p>
+          <div class="logos">
+            <span>Innovate Corp</span>
+            <span>Global Synergy</span>
+            <span>QuantumLeap</span>
+            <span>DataDriven Inc.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======== FEATURES SECTION ======== -->
+      <section id="features" class="features-section">
+        <div class="container">
+          <div class="section-header">
+            <h3>Una Plataforma, Tres Pilares de Innovación</h3>
+            <p>
+              Descubre cómo Nexus integra funcionalidades clave para potenciar a
+              tu equipo.
+            </p>
+          </div>
+
+          <div class="interactive-features">
+            <!-- Control de Auto-play -->
+            <div class="demo-controls">
+              <button id="autoPlayBtn" class="auto-play-btn">
+                <i class="ph-bold ph-pause"></i>
+                <span>Pausar Demo</span>
+              </button>
+              <div class="demo-indicators">
+                <span class="indicator active" data-tab="colaboracion"></span>
+                <span class="indicator" data-tab="analisis"></span>
+                <span class="indicator" data-tab="automatizacion"></span>
+              </div>
+            </div>
+
+            <div class="feature-tabs">
+              <button class="tab-button active" data-tab="colaboracion">
+                <i class="ph-bold ph-users-three"></i>
+                <span>Colaboración</span>
+              </button>
+              <button class="tab-button" data-tab="analisis">
+                <i class="ph-bold ph-chart-line-up"></i>
+                <span>Análisis</span>
+              </button>
+              <button class="tab-button" data-tab="automatizacion">
+                <i class="ph-bold ph-lightning"></i>
+                <span>Automatización</span>
+              </button>
+            </div>
+
+            <div class="feature-content">
+              <!-- Colaboración Content -->
+              <div class="content-pane active" id="colaboracion">
+                <div class="pane-text">
+                  <h4>Colaboración en Tiempo Real</h4>
+                  <p>
+                    Conecta equipos sin importar su ubicación. Edición
+                    simultánea de documentos, sugerencias de IA contextuales y
+                    un historial de cambios inteligente que aprende de tus
+                    patrones.
+                  </p>
+                  <ul>
+                    <li>
+                      <i class="ph-fill ph-check-circle"></i> Conexión de
+                      equipos globales con IA.
+                    </li>
+                    <li>
+                      <i class="ph-fill ph-check-circle"></i> Sugerencias de
+                      optimización en vivo.
+                    </li>
+                    <li>
+                      <i class="ph-fill ph-check-circle"></i> Métricas de
+                      productividad y satisfacción.
+                    </li>
+                  </ul>
+
+                  <!-- Métricas en tiempo real -->
+                  <div class="live-metrics">
+                    <div class="metric-card">
+                      <div class="metric-icon">
+                        <i class="ph-bold ph-users-three"></i>
+                      </div>
+                      <div class="metric-info">
+                        <span class="metric-value" data-target="24">0</span>
+                        <span class="metric-label">Usuarios Activos</span>
+                      </div>
+                    </div>
+                    <div class="metric-card">
+                      <div class="metric-icon">
+                        <i class="ph-bold ph-clock"></i>
+                      </div>
+                      <div class="metric-info">
+                        <span class="metric-value" data-target="98">0</span>
+                        <span class="metric-label">% Tiempo Activo</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pane-visual">
+                  <div class="dashboard-mockup collaboration-dashboard">
+                    <div class="dashboard-header">
+                      <div class="dashboard-title">
+                        <i class="ph-bold ph-users-three"></i>
+                        <span>Panel de Colaboración</span>
+                      </div>
+                      <div class="status-indicator online">
+                        <span class="pulse"></span>
+                        En línea
+                      </div>
+                    </div>
+                    <div class="dashboard-content">
+                      <div class="activity-feed">
+                        <div class="activity-item">
+                          <div class="activity-avatar">JD</div>
+                          <div class="activity-text">
+                            <strong>Juan Díaz</strong> editó el documento
+                            <span class="activity-time">hace 2 min</span>
+                          </div>
+                        </div>
+                        <div class="activity-item">
+                          <div class="activity-avatar">MS</div>
+                          <div class="activity-text">
+                            <strong>María Silva</strong> añadió comentario
+                            <span class="activity-time">hace 5 min</span>
+                          </div>
+                        </div>
+                        <div class="activity-item">
+                          <div class="activity-avatar">AI</div>
+                          <div class="activity-text">
+                            <strong>Nexus IA</strong> sugirió optimización
+                            <span class="activity-time">hace 8 min</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Análisis Content -->
+              <div class="content-pane" id="analisis">
+                <div class="pane-text">
+                  <h4>Análisis Cognitivo Avanzado</h4>
+                  <p>
+                    Toma decisiones estratégicas basadas en datos, no en
+                    intuiciones. Nexus analiza patrones de comunicación, predice
+                    cuellos de botella y revela insights sobre la productividad
+                    de tu equipo con un 99.2% de precisión.
+                  </p>
+                  <ul>
+                    <li>
+                      <i class="ph-fill ph-check-circle"></i> 86% de eficiencia
+                      mejorada.
+                    </li>
+                    <li>
+                      <i class="ph-fill ph-check-circle"></i> Reducción del
+                      tiempo de decisión a 12min.
+                    </li>
+                    <li>
+                      <i class="ph-fill ph-check-circle"></i> 99.2% de precisión
+                      en predicciones.
+                    </li>
+                  </ul>
+
+                  <!-- Métricas de análisis -->
+                  <div class="live-metrics">
+                    <div class="metric-card">
+                      <div class="metric-icon">
+                        <i class="ph-bold ph-chart-line-up"></i>
+                      </div>
+                      <div class="metric-info">
+                        <span class="metric-value" data-target="86">0</span>
+                        <span class="metric-label">% Eficiencia</span>
+                      </div>
+                    </div>
+                    <div class="metric-card">
+                      <div class="metric-icon">
+                        <i class="ph-bold ph-target"></i>
+                      </div>
+                      <div class="metric-info">
+                        <span class="metric-value" data-target="99">0</span>
+                        <span class="metric-label">% Precisión</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pane-visual">
+                  <div class="dashboard-mockup analytics-dashboard">
+                    <div class="dashboard-header">
+                      <div class="dashboard-title">
+                        <i class="ph-bold ph-chart-line-up"></i>
+                        <span>Panel de Análisis</span>
+                      </div>
+                      <div class="status-indicator processing">
+                        <span class="spinner"></span>
+                        Analizando
+                      </div>
+                    </div>
+                    <div class="dashboard-content">
+                      <div class="chart-container">
+                        <div class="chart-bars">
+                          <div class="bar" style="height: 60%"></div>
+                          <div class="bar" style="height: 80%"></div>
+                          <div class="bar" style="height: 45%"></div>
+                          <div class="bar" style="height: 90%"></div>
+                          <div class="bar" style="height: 70%"></div>
+                        </div>
+                        <div class="chart-labels">
+                          <span>Lun</span>
+                          <span>Mar</span>
+                          <span>Mié</span>
+                          <span>Jue</span>
+                          <span>Vie</span>
+                        </div>
+                      </div>
+                      <div class="insights-panel">
+                        <div class="insight-item">
+                          <i class="ph-bold ph-trend-up"></i>
+                          <span>Productividad +15% esta semana</span>
+                        </div>
+                        <div class="insight-item">
+                          <i class="ph-bold ph-warning"></i>
+                          <span>Posible cuello de botella detectado</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Automatización Content -->
+              <div class="content-pane" id="automatizacion">
+                <div class="pane-text">
+                  <h4>Automatización Inteligente</h4>
+                  <p>
+                    Libera a tu equipo de tareas repetitivas. Automatiza desde
+                    el onboarding de nuevos miembros hasta la asignación de
+                    recursos y la generación de reportes, permitiendo que tu
+                    talento se enfoque en lo que realmente importa.
+                  </p>
+                  <ul>
+                    <li>
+                      <i class="ph-fill ph-check-circle"></i> Flujos de trabajo
+                      optimizados por IA.
+                    </li>
+                    <li>
+                      <i class="ph-fill ph-check-circle"></i> Onboarding,
+                      optimización y análisis predictivo.
+                    </li>
+                    <li>
+                      <i class="ph-fill ph-check-circle"></i> Seguimiento de
+                      procesos en tiempo real.
+                    </li>
+                  </ul>
+
+                  <!-- Métricas de automatización -->
+                  <div class="live-metrics">
+                    <div class="metric-card">
+                      <div class="metric-icon">
+                        <i class="ph-bold ph-lightning"></i>
+                      </div>
+                      <div class="metric-info">
+                        <span class="metric-value" data-target="12">0</span>
+                        <span class="metric-label">Procesos Activos</span>
+                      </div>
+                    </div>
+                    <div class="metric-card">
+                      <div class="metric-icon">
+                        <i class="ph-bold ph-clock-countdown"></i>
+                      </div>
+                      <div class="metric-info">
+                        <span class="metric-value" data-target="75">0</span>
+                        <span class="metric-label">% Tiempo Ahorrado</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pane-visual">
+                  <div class="dashboard-mockup automation-dashboard">
+                    <div class="dashboard-header">
+                      <div class="dashboard-title">
+                        <i class="ph-bold ph-lightning"></i>
+                        <span>Panel de Automatización</span>
+                      </div>
+                      <div class="status-indicator active">
+                        <span class="pulse"></span>
+                        Ejecutando
+                      </div>
+                    </div>
+                    <div class="dashboard-content">
+                      <div class="automation-flows">
+                        <div class="flow-item">
+                          <div class="flow-status running"></div>
+                          <div class="flow-info">
+                            <span class="flow-name">Onboarding Automático</span>
+                            <span class="flow-progress">Paso 3 de 5</span>
+                          </div>
+                        </div>
+                        <div class="flow-item">
+                          <div class="flow-status completed"></div>
+                          <div class="flow-info">
+                            <span class="flow-name">Reporte Semanal</span>
+                            <span class="flow-progress">Completado</span>
+                          </div>
+                        </div>
+                        <div class="flow-item">
+                          <div class="flow-status pending"></div>
+                          <div class="flow-info">
+                            <span class="flow-name">Asignación de Tareas</span>
+                            <span class="flow-progress">Programado</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======== WHY NEXUS SECTION ======== -->
+      <section id="why-nexus" class="why-nexus-section">
+        <div class="container">
+          <div class="section-header">
+            <h3>¿Por qué Nexus?</h3>
+            <p>
+              El equilibrio perfecto entre innovación disruptiva y viabilidad
+              empresarial.
+            </p>
+          </div>
+          <div class="cards-grid">
+            <div class="card">
+              <div
+                class="card-icon"
+                style="color: #60a5fa; background-color: rgba(96, 165, 250, 0.1)"
+              >
+                <i class="ph-bold ph-brain"></i>
+              </div>
+              <h4>IA Cognitiva Enfocada</h4>
+              <p>
+                A diferencia de IAs de propósito general, Nexus opera en
+                entornos B2B estructurados (APIs, datos internos), permitiendo
+                una viabilidad técnica superior y una adaptación que aprende
+                específicamente de *tu* equipo.
+              </p>
+            </div>
+            <div class="card">
+              <div
+                class="card-icon"
+                style="color: #34d399; background-color: rgba(52, 211, 153, 0.1)"
+              >
+                <i class="ph-bold ph-rocket-launch"></i>
+              </div>
+              <h4>Innovación de Alto Impacto</h4>
+              <p>
+                Superamos a soluciones de nicho (turismo, noticias) al atacar el
+                núcleo de la productividad empresarial. Nuestro modelo B2B claro
+                garantiza un ROI medible y una disrupción sostenible en tu
+                industria.
+              </p>
+            </div>
+            <div class="card">
+              <div
+                class="card-icon"
+                style="color: #a78bfa; background-color: rgba(167, 139, 250, 0.1)"
+              >
+                <i class="ph-bold ph-shield-check"></i>
+              </div>
+              <h4>Seguridad y Ética by Design</h4>
+              <p>
+                Evitamos los altos riesgos regulatorios y éticos de las IAs de
+                salud. Nexus se construye sobre una base de seguridad
+                enterprise, garantizando cumplimiento normativo y protección
+                total de tus datos sensibles.
+              </p>
+            </div>
+            <div class="card">
+              <div
+                class="card-icon"
+                style="color: #fb7185; background-color: rgba(251, 113, 133, 0.1)"
+              >
+                <i class="ph-bold ph-globe-hemisphere-west"></i>
+              </div>
+              <h4>Colaboración Sin Fronteras</h4>
+              <p>
+                Conectamos equipos globales en tiempo real y optimizamos sus
+                flujos de trabajo. Una solución integral que unifica lo mejor de
+                las herramientas de colaboración y automatización para el
+                mercado enterprise.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======== USE CASES SECTION ======== -->
+      <section id="use-cases" class="use-cases-section">
+        <div class="container">
+          <div class="section-header">
+            <h3>Creado para Equipos de Alto Rendimiento</h3>
+            <p>
+              Nexus se adapta a las necesidades de diferentes departamentos para
+              maximizar su potencial.
+            </p>
+          </div>
+          <div class="use-cases-grid">
+            <div class="use-case-item">
+              <i class="ph-bold ph-code"></i>
+              <h5>Equipos de Ingeniería</h5>
+              <p>
+                Optimización de sprints, detección temprana de bloqueos y
+                asignación inteligente de tareas basadas en la carga de trabajo
+                y habilidades.
+              </p>
+            </div>
+            <div class="use-case-item">
+              <i class="ph-bold ph-projector-screen-chart"></i>
+              <h5>Departamentos de Marketing</h5>
+              <p>
+                Colaboración fluida en campañas creativas, análisis predictivo
+                del rendimiento de contenidos y automatización de reportes.
+              </p>
+            </div>
+            <div class="use-case-item">
+              <i class="ph-bold ph-identification-card"></i>
+              <h5>Recursos Humanos</h5>
+              <p>
+                Automatización completa del proceso de onboarding, análisis del
+                clima laboral a través de la comunicación y sugerencias para
+                mejorar la retención.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======== FINAL CTA SECTION ======== -->
+      <section id="cta" class="final-cta-section">
+        <div class="container">
+          <h3>Únete a la Revolución de la Colaboración</h3>
+          <p>
+            Más de 500 empresas ya confían en Nexus para transformar su
+            productividad.
+          </p>
+          <a href="#" class="btn btn-light btn-large">
+            <span>Comenzar Prueba Gratuita</span>
+            <i class="ph-bold ph-arrow-right"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <h4>Nexus</h4>
+            <p>Agente Cognitivo de Colaboración en Tiempo Real.</p>
+          </div>
+          <div class="footer-links">
+            <h5>Producto</h5>
+            <a href="#features">Características</a>
+            <a href="#why-nexus">Por qué Nexus</a>
+            <a href="#use-cases">Casos de Uso</a>
+          </div>
+          <div class="footer-links">
+            <h5>Compañía</h5>
+            <a href="#">Sobre Nosotros</a>
+            <a href="#">Contacto</a>
+            <a href="#">Carreras</a>
+          </div>
+          <div class="footer-links">
+            <h5>Legal</h5>
+            <a href="#">Términos de Servicio</a>
+            <a href="#">Política de Privacidad</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Nexus Technologies. Todos los derechos reservados.</p>
+          <div class="social-icons">
+            <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="#"><i class="ph ph-twitter-logo"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
