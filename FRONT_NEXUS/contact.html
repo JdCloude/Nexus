@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Nexus</title>
+
+    <!-- Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="container">
+        <a href="index.html" class="logo">Nexus</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="product.html">Producto</a></li>
+          <li><a href="solutions.html">Soluciones</a></li>
+          <li><a href="about.html">Sobre Nosotros</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+        <a href="#contact-form" class="btn btn-demo">Enviar Mensaje</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ======== CONTACT HERO SECTION ======== -->
+      <section class="hero-section">
+        <div class="hero-bg">
+          <div class="hero-gradient"></div>
+          <div class="hero-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <i class="ph-bold ph-chat-circle-dots"></i>
+              <span>Estamos Aquí para Ayudarte</span>
+            </div>
+            <h1 class="hero-title">
+              <span class="title-line">Hablemos</span>
+              <span class="title-subtitle">sobre tu</span>
+              <span class="title-highlight">Proyecto</span>
+            </h1>
+            <p class="hero-description">
+              ¿Listo para transformar tu equipo con Nexus? Nuestros expertos están disponibles para <strong>consultas personalizadas</strong> y demos en vivo adaptadas a tu industria.
+            </p>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number">24h</span>
+                <span class="stat-label">Tiempo de Respuesta</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">Satisfacción Cliente</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">25</span>
+                <span class="stat-label">Países Atendidos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======== CONTACT METHODS SECTION ======== -->
+      <section class="features-section">
+        <div class="container">
+          <div class="section-header">
+            <h3>Múltiples Formas de Conectar</h3>
+            <p>
+              Elige la opción que mejor se adapte a tus necesidades y preferencias de comunicación.
+            </p>
+          </div>
+          
+          <div class="use-cases-grid">
+            <div class="use-case-item">
+              <i class="ph-bold ph-video-camera" style="color: #60a5fa;"></i>
+              <h5>Demo Personalizada</h5>
+              <p>
+                Agenda una demostración en vivo de 30 minutos adaptada a tu industria y casos de uso específicos.
+              </p>
+              <a href="#contact-form" class="btn btn-primary" style="margin-top: 20px;">
+                <i class="ph-bold ph-calendar"></i>
+                <span>Agendar Demo</span>
+              </a>
+            </div>
+            
+            <div class="use-case-item">
+              <i class="ph-bold ph-phone" style="color: #34d399;"></i>
+              <h5>Consulta Telefónica</h5>
+              <p>
+                Habla directamente con nuestros especialistas para resolver dudas técnicas y comerciales.
+              </p>
+              <div style="margin-top: 20px;">
+                <p style="font-weight: 600; color: var(--primary-teal); margin-bottom: 5px;">+1 (555) 123-4567</p>
+                <p style="font-size: 0.9rem; color: var(--text-muted);">Lun-Vie: 9:00-18:00 EST</p>
+              </div>
+            </div>
+            
+            <div class="use-case-item">
+              <i class="ph-bold ph-envelope" style="color: #a78bfa;"></i>
+              <h5>Soporte por Email</h5>
+              <p>
+                Envíanos tus preguntas detalladas y recibe respuestas completas de nuestros expertos.
+              </p>
+              <div style="margin-top: 20px;">
+                <p style="font-weight: 600; color: var(--accent-purple); margin-bottom: 5px;">hello@nexus.ai</p>
+                <p style="font-size: 0.9rem; color: var(--text-muted);">Respuesta en 24h</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======== CONTACT FORM SECTION ======== -->
+      <section id="contact-form" class="why-nexus-section">
+        <div class="container">
+          <div class="section-header">
+            <h3>Envíanos un Mensaje</h3>
+            <p>
+              Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas.
+            </p>
+          </div>
+          
+          <div class="contact-form-container">
+            <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="firstName">Nombre *</label>
+                  <input type="text" id="firstName" name="firstName" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="lastName">Apellido *</label>
+                  <input type="text" id="lastName" name="lastName" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">Email Corporativo *</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="phone">Teléfono</label>
+                  <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                  <label for="company">Empresa *</label>
+                  <input type="text" id="company" name="company" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="position">Cargo</label>
+                  <input type="text" id="position" name="position" placeholder="ej. CTO, VP Engineering">
+                </div>
+                
+                <div class="form-group">
+                  <label for="industry">Industria *</label>
+                  <select id="industry" name="industry" required>
+                    <option value="">Selecciona tu industria</option>
+                    <option value="software">Desarrollo de Software</option>
+                    <option value="marketing">Marketing y Publicidad</option>
+                    <option value="consulting">Consultoría</option>
+                    <option value="finance">Servicios Financieros</option>
+                    <option value="healthcare">Salud y Medicina</option>
+                    <option value="education">Educación</option>
+                    <option value="retail">Retail y E-commerce</option>
+                    <option value="manufacturing">Manufactura</option>
+                    <option value="other">Otra</option>
+                  </select>
+                </div>
+                
+                <div class="form-group">
+                  <label for="teamSize">Tamaño del Equipo</label>
+                  <select id="teamSize" name="teamSize">
+                    <option value="">Selecciona el tamaño</option>
+                    <option value="1-10">1-10 personas</option>
+                    <option value="11-50">11-50 personas</option>
+                    <option value="51-200">51-200 personas</option>
+                    <option value="201-1000">201-1000 personas</option>
+                    <option value="1000+">Más de 1000 personas</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="form-group full-width">
+                <label for="interest">¿Qué te interesa más de Nexus? *</label>
+                <div class="checkbox-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="interest" value="collaboration">
+                    <span class="checkmark"></span>
+                    Colaboración en Tiempo Real
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="interest" value="analytics">
+                    <span class="checkmark"></span>
+                    Análisis Cognitivo Avanzado
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="interest" value="automation">
+                    <span class="checkmark"></span>
+                    Automatización Inteligente
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="interest" value="integration">
+                    <span class="checkmark"></span>
+                    Integraciones con APIs
+                  </label>
+                </div>
+              </div>
+              
+              <div class="form-group full-width">
+                <label for="message">Cuéntanos sobre tu proyecto *</label>
+                <textarea id="message" name="message" rows="5" placeholder="Describe tu caso de uso, desafíos actuales, objetivos, o cualquier pregunta específica que tengas sobre Nexus..." required></textarea>
+              </div>
+              
+              <div class="form-group full-width">
+                <label for="timeline">¿Cuándo planeas implementar una solución?</label>
+                <select id="timeline" name="timeline">
+                  <option value="">Selecciona un timeframe</option>
+                  <option value="immediate">Inmediatamente (próximas 2 semanas)</option>
+                  <option value="month">En el próximo mes</option>
+                  <option value="quarter">En los próximos 3 meses</option>
+                  <option value="half-year">En los próximos 6 meses</option>
+                  <option value="exploring">Solo estoy explorando opciones</option>
+                </select>
+              </div>
+              
+              <div class="form-group full-width">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="newsletter" value="yes">
+                  <span class="checkmark"></span>
+                  Quiero recibir actualizaciones sobre nuevas funcionalidades y casos de éxito
+                </label>
+              </div>
+              
+              <div class="form-group full-width">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="privacy" value="accepted" required>
+                  <span class="checkmark"></span>
+                  Acepto la <a href="#" style="color: var(--primary-blue);">Política de Privacidad</a> y el procesamiento de mis datos *
+                </label>
+              </div>
+              
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-large">
+                  <i class="ph-bold ph-paper-plane-tilt"></i>
+                  <span>Enviar Mensaje</span>
+                </button>
+                <p class="form-note">
+                  <i class="ph-bold ph-shield-check"></i>
+                  Tus datos están protegidos con cifrado de nivel empresarial
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======== FAQ SECTION ======== -->
+      <section class="features-section">
+        <div class="container">
+          <div class="section-header">
+            <h3>Preguntas Frecuentes</h3>
+            <p>
+              Respuestas rápidas a las consultas más comunes sobre Nexus.
+            </p>
+          </div>
+          
+          <div class="faq-container">
+            <div class="faq-item">
+              <div class="faq-question">
+                <h4>¿Cuánto tiempo toma implementar Nexus?</h4>
+                <i class="ph-bold ph-plus"></i>
+              </div>
+              <div class="faq-answer">
+                <p>La implementación típica toma entre 2-4 semanas, dependiendo del tamaño de tu equipo y las integraciones requeridas. Nuestro equipo de Customer Success te acompaña durante todo el proceso.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                <h4>¿Nexus se integra con nuestras herramientas actuales?</h4>
+                <i class="ph-bold ph-plus"></i>
+              </div>
+              <div class="faq-answer">
+                <p>Sí, Nexus se integra con más de 200+ herramientas empresariales incluyendo Slack, Microsoft Teams, Jira, Salesforce, GitHub, y muchas más. También ofrecemos integraciones personalizadas.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                <h4>¿Qué nivel de soporte técnico ofrecen?</h4>
+                <i class="ph-bold ph-plus"></i>
+              </div>
+              <div class="faq-answer">
+                <p>Ofrecemos soporte 24/7 para clientes Enterprise, soporte prioritario para Business, y soporte por email para Startup. Todos los planes incluyen documentación completa y recursos de onboarding.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                <h4>¿Cómo garantizan la seguridad de nuestros datos?</h4>
+                <i class="ph-bold ph-plus"></i>
+              </div>
+              <div class="faq-answer">
+                <p>Nexus cumple con SOC 2 Type II, GDPR, y HIPAA. Utilizamos cifrado end-to-end, auditorías de seguridad continuas, y mantenemos certificaciones de seguridad de nivel empresarial.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======== FINAL CTA SECTION ======== -->
+      <section class="final-cta-section">
+        <div class="container">
+          <h3>¿Listo para Comenzar?</h3>
+          <p>
+            Únete a más de 500 empresas que ya están transformando su productividad con Nexus.
+          </p>
+          <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+            <a href="product.html" class="btn btn-light btn-large">
+              <span>Ver Planes y Precios</span>
+              <i class="ph-bold ph-arrow-right"></i>
+            </a>
+            <a href="#contact-form" class="btn btn-demo btn-large">
+              <i class="ph-bold ph-calendar"></i>
+              <span>Agendar Demo Gratuita</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <h4>Nexus</h4>
+            <p>Agente Cognitivo de Colaboración en Tiempo Real.</p>
+            <div style="margin-top: 15px;">
+              <p style="font-size: 0.9rem; color: var(--text-muted);">
+                <i class="ph-bold ph-map-pin"></i>
+                San Francisco, CA | Madrid, ES
+              </p>
+              <p style="font-size: 0.9rem; color: var(--text-muted);">
+                <i class="ph-bold ph-envelope"></i>
+                hello@nexus.ai
+              </p>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h5>Producto</h5>
+            <a href="product.html">Producto</a>
+            <a href="solutions.html">Soluciones</a>
+            <a href="index.html#features">Características</a>
+          </div>
+          <div class="footer-links">
+            <h5>Compañía</h5>
+            <a href="about.html">Sobre Nosotros</a>
+            <a href="contact.html">Contacto</a>
+            <a href="#">Carreras</a>
+          </div>
+          <div class="footer-links">
+            <h5>Legal</h5>
+            <a href="#">Términos de Servicio</a>
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Nexus Technologies. Todos los derechos reservados.</p>
+          <div class="social-icons">
+            <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="#"><i class="ph ph-twitter-logo"></i></a>
+            <a href="#"><i class="ph ph-github-logo"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script>
+      // FAQ Accordion functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+          const question = item.querySelector('.faq-question');
+          const answer = item.querySelector('.faq-answer');
+          const icon = question.querySelector('i');
+          
+          question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            
+            // Close all other FAQ items
+            faqItems.forEach(otherItem => {
+              otherItem.classList.remove('active');
+              otherItem.querySelector('i').className = 'ph-bold ph-plus';
+            });
+            
+            // Toggle current item
+            if (!isActive) {
+              item.classList.add('active');
+              icon.className = 'ph-bold ph-minus';
+            }
+          });
+        });
+
+        // Form validation and enhancement
+        const form = document.querySelector('.contact-form');
+        const requiredFields = form.querySelectorAll('[required]');
+        
+        form.addEventListener('submit', function(e) {
+          let isValid = true;
+          
+          requiredFields.forEach(field => {
+            if (!field.value.trim()) {
+              isValid = false;
+              field.classList.add('error');
+            } else {
+              field.classList.remove('error');
+            }
+          });
+          
+          if (!isValid) {
+            e.preventDefault();
+            alert('Por favor, completa todos los campos obligatorios.');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
